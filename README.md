@@ -1,4 +1,6 @@
 # Task-1-and-Task-2
+#Task 1: Calculate Factorial Using a Function 
+
 def factorial(n):
 
     if n == 0 or n == 1:
@@ -8,6 +10,9 @@ def factorial(n):
 
 num = int(input("Enter a number: "))
 print("Factorial is:",factorial(num))
+
+#Task 2: Using the Math Module for Calculations
+
 
 import math
 
