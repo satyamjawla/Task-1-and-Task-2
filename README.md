@@ -1,26 +1,20 @@
 # Task-1-and-Task-2
-num1 =int(input("Enter a number: "))
-num2 =int(input("Enter another number: "))
+def factorial(n):
 
-print("Addition: ", num1+num2)
-print("Subtraction: ", num1-num2)
-print("Multiplication: ",num1*num2)
-print("Division: ",num1/num2)
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * (factorial(n-1))
 
+num = int(input("Enter a number: "))
+print("Factorial is:",factorial(num))
 
-Enter a number: 5
-Enter another number: 10
-Addition:  15
-Subtraction:  -5
-Multiplication:  50
-Division:  0.5
+import math
 
+number = float(input("Enter a number: "))
 
-First_name = input("Enter your first name: ")
-Last_name = input("Enter your last name: ")
+print("Square root:",math.sqrt(number))
 
-print("Hello,", First_name, Last_name,"! Welcome to the python program")
+print("Natural logarithm:",math.log(number))
 
-Enter your first name: John
-Enter your last name: Doe
-Hello, John Doe ! Welcome to the python program
+print("Sine (radians):",math.sin(number))
